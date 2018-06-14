@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <PreferenceCategory android:title="個人資訊">
+
+
+        <EditTextPreference
+            android:defaultValue="Default value"
+            android:key="edit_text_preference_1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="用戶名稱" />
+        <EditTextPreference
+            android:defaultValue="Default value"
+            android:key="edit_text_preference_1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="個人簡介" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="推播通知">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="switch_preference_1"
+            android:title="追蹤通知" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="switch_preference_1"
+            android:title="按讚通知" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="switch_preference_1"
+            android:title="留言通知" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="關於與支援">
+
+        <Preference
+            android:key=""
+            android:title="關於MRTguidance" />
+        <Preference
+            android:key=""
+            android:title="分享MRTguidance" />
+        <Preference
+            android:key=""
+            android:title="回報與建議" />
+        <Preference
+            android:key=""
+            android:title="登出" />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

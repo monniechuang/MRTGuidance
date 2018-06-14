@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddArticleActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgViewRestaurantPhoto"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/restaurant" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="4"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/editTextRestaurantName"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="餐廳名稱"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/editTextRestaurantTelephone"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="telephone"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/editTextRestaurantLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="location"
+                        android:inputType="textPersonName" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#8D6E63"
+                    android:gravity="center"
+                    android:text="撰寫食記"
+                    android:textColor="#EFEBE9"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/editTextArticleTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:hint="文章標題"
+                    android:inputType="textPersonName" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonUploadRestaurantPhoto"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/camera" />
+
+                <EditText
+                    android:id="@+id/editTextWriteArticle"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_weight="3"
+                    android:gravity="left"
+                    android:hint="這次用餐的感覺如何？除了用＃hashtag #台北車站 #好吃 紀錄，還可以在內文中提及 ＠美食客 讓更多看到你的分享喔！"
+                    android:inputType="textMultiLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/buttonSubmitArticle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#8D6E63"
+                    android:text="發布文章"
+                    android:textColor="#EFEBE9" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

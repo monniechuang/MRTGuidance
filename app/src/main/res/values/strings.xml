@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MRTGuidance</string>
+
+    <string-array name="ArrangeOrder">
+        <item>預設排序</item>
+        <item>依距離排序</item>
+        <item>依評分排序</item>
+
+    </string-array>
+
+</resources>

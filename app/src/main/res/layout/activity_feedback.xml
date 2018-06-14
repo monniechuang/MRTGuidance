@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeedbackActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextFeedbackEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="Email Adress"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextFeedbackSubject"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="Email Subject Title"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextFeedbackEmailText"
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:ems="10"
+            android:hint="Please write your message here!"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/buttonSendFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
