@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/meal_diary"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MealDairy">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="41dp"
+        tools:ignore="MissingConstraints">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageView2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="20dp"
+                android:background="@drawable/store" />
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/edName"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_marginVertical="10dp"
+                    android:text="storename" />
+
+                <TextView
+                    android:id="@+id/edPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_marginVertical="10dp"
+                    android:text="phonenumber" />
+
+                <TextView
+                    android:id="@+id/edLoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_marginVertical="10dp"
+                    android:text="location" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imUser"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/user" />
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tPosts"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:text="貼文" />
+
+                <TextView
+                    android:id="@+id/edPostNum"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:hint="PostNum" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tfans"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:text="粉絲" />
+
+                <TextView
+                    android:id="@+id/edfans"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:hint="FanNums" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="101dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imthumb"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_marginVertical="5dp"
+                    android:background="@drawable/thumb" />
+
+                <ImageButton
+                    android:id="@+id/imcollect"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_marginVertical="5dp"
+                    android:background="@drawable/collect" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tthumb"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginVertical="5dp"
+                    android:gravity="center"
+                    android:text="@string/likeNums"/>
+
+                <TextView
+                    android:id="@+id/tcollect"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginVertical="5dp"
+                    android:gravity="center"
+                    android:text="@string/collectNums" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tReview"
+                android:layout_width="380dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="Reviews" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imc"
+                android:layout_width="330dp"
+                android:layout_height="180dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                app:srcCompat="@drawable/c" />
+
+            <TextView
+                android:id="@+id/tc"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="「咖啡任務．Coffee Task」隱身在辦公大樓36樓，是全台中最高的咖啡館，坐在窗邊可以居高臨下眺望台中市的美景！" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imo"
+                android:layout_width="330dp"
+                android:layout_height="180dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                app:srcCompat="@drawable/o" />
+
+            <TextView
+                android:id="@+id/to"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="「咖啡任務．Coffee Task」的一樓的隔壁就是合作金庫…" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imf"
+                android:layout_width="330dp"
+                android:layout_height="180dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                app:srcCompat="@drawable/f" />
+
+            <TextView
+                android:id="@+id/tf"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="門口居然有扭蛋機耶！我還沒在台中玩過扭蛋機耶！這樣會很聳嗎？" />
+        </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
